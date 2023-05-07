@@ -4,7 +4,7 @@ import { QuizContext } from "../contexts/quiz";
 
 const Quiz = () => {
     const [quizState, dispatch] = useContext(QuizContext);
-    const apiUrl = "https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986";
+    const apiUrl = "https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=multiple";
 
     useEffect(() => {
         if (quizState.questions.length>0){

@@ -142,16 +142,16 @@ body {
 }
 
 .quiz {
-  width: 600px;
+  width: 65%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 10px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px #ccc;
 }
 
 .question {
-  background-color: #009688;
+  background-color: #00645a;
   color: white;
   padding: 20px;
   font-size: 24px;
@@ -166,11 +166,11 @@ body {
 }
 
 .congratulations {
-  background-color: #03a9f4;
+  background-color: #005f8c;
   padding: 20px;
   font-size: 36px;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 15px;
 }
 
 .results-info {
@@ -182,7 +182,7 @@ body {
 .answer {
   width: 100%;
   background: #fff;
-  border: 2px solid #03a9f4;
+  border: 2px solid #005f8c;
   min-height: 70px;
   cursor: pointer;
   margin-bottom: 30px;
@@ -190,6 +190,13 @@ body {
   /* align-items: center;
   justify-content: center; */
   border-radius: 10px;
+}
+
+.answer:hover {
+  background-color: #b8b7b7;
+  .answer-letter {
+    background-color: #05665e;
+  }
 }
 
 .answers {
@@ -201,7 +208,7 @@ body {
 
 .answer-letter {
   font-size: 30px;
-  background-color: #03a9f4;
+  background-color: #005f8c;
   color: #fff;
   width: 70px;
   display: flex;
@@ -211,6 +218,7 @@ body {
   margin-right: 20px;
 }
 
+
 .answer-text {
   font-weight: 600;
   display: flex;
@@ -218,11 +226,11 @@ body {
 }
 
 .correct-answer {
-  border: 2px solid #4caf50;
+  border: 2px solid #009d05;
 }
 
 .correct-answer .answer-letter {
-  background: #4caf50;
+  background: #009d05;
 }
 
 .wrong-answer {
@@ -236,7 +244,7 @@ body {
 .next-button {
   margin: 0 auto;
   color: #fff;
-  background: #03a9f4;
+  background: #012b3e;
   width: 300px;
   font-size: 18px;
   font-weight: 600;
@@ -244,15 +252,22 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
-  border-radius: 50px;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #1d2a30;
+  /* transform: scale(1.2); */
+}
+
+.next-button:hover {
+  background: #005881;
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .score {
-  background: #03a9f4;
+  background: #012b3e;
   color: #fff;
   font-size: 18px;
-  width: 200px;
   margin: 0 auto;
   font-weight: 600;
   height: 40px;
@@ -260,5 +275,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.disabled-answer {
+  pointer-events: none;
 }
